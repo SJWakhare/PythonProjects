@@ -41,6 +41,9 @@ df = pd.DataFrame({
 # Convert date strings to datetime
 df['date'] = pd.to_datetime(df['date'])
 
+# Calculate average
+df['avg_temp'] = (df['max_temp'] + df['min_temp']) / 2
+
 print(f"{df}\n\n")
 
 
