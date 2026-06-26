@@ -70,9 +70,9 @@ plt.show()
 # 4th step - Save to CSV
 
 # Create data folder if it doesn't exist
-if not os.path.exists('data'):
-    os.makedirs('data')
+if not os.path.exists('weather-data'):
+    os.makedirs('weather-data')
 
 # Save to CSV
-df.to_csv('data/paris_weather.csv', index=False)
-print("Data saved to data/paris_weather.csv")
+df.to_csv('weather-data/paris_weather.csv', index=False)
+print("Data saved to weather-data/paris_weather.csv")
